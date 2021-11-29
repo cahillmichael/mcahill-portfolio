@@ -74,51 +74,139 @@ header nav ul li a {
 /* hero style end */
 
 /* about me style start */
-/* .section-title {
-    font-size: 48px;
-    color: #445755;
-    border-right: 5px solid;
-    padding: 10px 5px 10px 10px;
-    text-align: top;
-}
-
-.primary-border {
-    border-color: #445755;
-} */
-
-.about-me h2 {
+.section-title {
     font-size: 48px;
     color: #445755;
     border-color: #445755;
     border-right: 3px solid;
     padding: 10px;
     text-align: right;
-    height: 400px;
+}
+
+.primary-border {
+    border-color: #445755;
 }
 
 .three-column {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 10px 5px;
+    height: 400 px;
 }
 
-/* .three-column h2 {
-
-    margin: 15px;
+/* .three-column > * {
+    flex: 1;
+    margin: 30px;
 } */
-/* 
-.three-column p {
-    flex: 1 1 300px;
-    margin: 15px;
+
+.three-column h2 {
+    height: 100%;
 }
 
-.three-column img {
-    flex: 1 1 100px;
-    margin: 15px;
-} */
+.column-header {
+    flex: 0 0 20%;
+}
 
-.three-column > * {
+.column-p {
+    flex: 0 0 60%;
+    padding: 10px;
+}
+
+.columm-img {
+    flex: 0 0 20%;
+}
+
+/* about me style end */
+
+/* work style start */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.work h2 {
+    height: 900px;
+}
+
+.work-header {
+    flex: 0 0 20%;
+}
+
+.card {
+    min-width: 500px;
+    height: 300px;
+    padding: 10px;
+    border: 5px solid #92cbcd;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    /* min-height: 200px;
+    min-width: 500px; */
+}
+
+.card .text {
+    background-color: #92cbcd;
+    color: #31343d;
+    padding: 10px;
+    /* width: 40%; */
+    /* margin: 0px 0px 20px; */
+}
+
+.card h3{
+    font-size: 24px;
+    padding: 5px;
+}
+
+/* cards div occupies 80% of work section and contains card elements */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 80%;
+}
+
+#card-one {
+    background-image: url("../images/run-buddy.jpeg");
+    background-size: cover;
+    background-position: center;
+    flex: 0 0 100%;
+}
+
+#card-two {
+    background-image: url("../images/hero-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    flex: 0 0 50%
+}
+
+#card-three {
+    background-image: url("../images/cupola.jpeg");
+    background-size: cover;
+    background-position: center;
+    flex: 0 0 50%;
+}
+
+#card-four {
+    background-image: url("../images/lizard.jpeg");
+    background-size: cover;
+    background-position: center;
+    flex: 0 0 50%;
+}
+
+#card-five {
+    background-image: url("../images/holodeck.jpeg");
+    background-size: cover;
+    background-position: center;
+    flex: 0 0 50%;
+}
+
+/* .card:nth-child(1) {
+    min-width: 1000px;
+}
+
+.work > * {
     flex: 1;
     margin: 15px;
-}
+} */
