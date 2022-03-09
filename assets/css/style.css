@@ -168,21 +168,21 @@ header nav ul li a {
 }
 
 #card-one {
-    background-image: url("../images/run-buddy.jpeg");
+    background-image: url("../images/hero-bg.jpeg");
     background-size: cover;
     background-position: center;
     flex: 0 0 100%;
 }
 
 #card-two {
-    background-image: url("../images/hero-bg.jpeg");
+    background-image: url("../images/trees.jpeg");
     background-size: cover;
     background-position: center;
     flex: 0 0 50%
 }
 
 #card-three {
-    background-image: url("../images/trees.jpeg");
+    background-image: url("../images/run-buddy.jpeg");
     background-size: cover;
     background-position: center;
     flex: 0 0 50%;
